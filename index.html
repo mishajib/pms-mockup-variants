@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<title>PMS variants</title>
+<style>:root{color-scheme:light;--bg:#FBF9F4;--surface:#FFFFFF;--surface-2:#F1EDE4;--text:#1E1A26;--muted:#4F4859;--brand:#3F2A78;--line:#E2DCCF;--focus:#6D4FB8;--ink:#17121F}
+*{box-sizing:border-box}html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.hero{background:var(--ink);color:#fff;border-radius:0 0 36px 36px;padding:64px 0 120px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-160px;width:460px;height:460px;border-radius:50%;background:#F5B301;opacity:.95}
+.hero:before{content:"";position:absolute;right:200px;bottom:-140px;width:300px;height:300px;border-radius:50%;background:#14B8A6;opacity:.9}
+.hero .wrap{position:relative;z-index:1}
+.kick{display:inline-block;background:#fff;color:var(--ink);font-weight:700;border-radius:99px;padding:4px 14px;font-size:.9375rem;margin-bottom:22px}
+h1{font-size:clamp(2.4rem,6.4vw,4.9rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 20px;max-width:16ch;font-weight:800}
+.hero p{margin:0;max-width:56ch;color:#E6E0F0;font-size:1.1875rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.badges span{border:1.5px solid #fff;border-radius:99px;padding:4px 14px;font-size:.9375rem;background:rgba(23,18,31,.55)}
+ul.grid{list-style:none;margin:-72px 0 0;padding:0 0 32px;display:grid;gap:26px;grid-template-columns:minmax(0,1fr);position:relative;z-index:2}
+@media (max-width:799px){.hero:after{width:200px;height:200px;right:-70px;top:-70px}.hero:before{display:none}}
+@media (min-width:800px){ul.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}}
+.card{display:flex;flex-direction:column;height:100%;background:var(--surface);border:2px solid var(--ink);border-radius:22px;overflow:hidden;text-decoration:none;color:var(--text);box-shadow:7px 7px 0 var(--ac);transition:transform .22s ease-out,box-shadow .22s ease-out}
+.card:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--ac)}
+.card:focus-visible{outline:4px solid var(--focus);outline-offset:4px}
+.shot{position:relative;aspect-ratio:16/10;background:var(--surface-2);border-bottom:2px solid var(--ink);overflow:hidden}
+.shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top left;transition:transform .5s ease-out;transform-origin:top left}
+.card:hover .shot img{transform:scale(1.04)}
+.num{position:absolute;right:14px;bottom:14px;background:var(--ac);color:var(--acf);font-weight:800;border-radius:99px;min-width:38px;height:38px;display:grid;place-items:center;border:2px solid var(--ink);font-size:1.0625rem}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.vs{font-size:.9375rem;color:var(--muted);font-weight:600}
+.card h2{font-size:1.6rem;line-height:1.15;margin:0;letter-spacing:-.02em;font-weight:800}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
+.tags li{background:var(--surface-2);border-radius:99px;padding:3px 12px;font-size:.875rem;font-weight:600}
+.open{margin-top:auto;padding-top:10px;font-weight:800;color:var(--ink);display:inline-flex;gap:8px;align-items:center;font-size:1.0625rem}
+.open svg{transition:transform .2s ease-out}.card:hover .open svg{transform:translateX(5px)}
+footer{padding:12px 0 56px;color:var(--muted);font-size:.9375rem;max-width:70ch}
+@media (prefers-reduced-motion:reduce){.card,.open svg,.shot img{transition:none}.card:hover,.card:hover .shot img,.card:hover .open svg{transform:none}}
+@media (min-width:1100px){
+body{min-height:100vh}.wrap{max-width:1500px;padding:0 32px}
+.hero{padding:28px 0 96px}.hero:after{width:300px;height:300px;right:-80px;top:-120px}.hero:before{width:200px;height:200px;right:260px;bottom:-110px}
+.kick{margin-bottom:12px}h1{font-size:clamp(2.2rem,3.6vw,3.4rem);max-width:none;margin-bottom:10px}
+.hero p{font-size:1.0625rem;max-width:70ch}.badges{margin-top:14px}
+ul.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:-64px;padding-bottom:14px}
+.card h2{font-size:1.25rem}.tags{display:none}.body{padding:14px 16px 16px;gap:6px}.card p{font-size:.9375rem}
+footer{padding:0 0 18px}}
+@media (min-width:1100px) and (max-height:820px){.card p{display:none}.hero p{display:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<span class="kick">Design approval</span>
+<h1>PMS, four ways to run a practice</h1>
+<p>Each mockup takes one competitor's strength and shows how PMS could do it better. All four are full multi-screen apps that work on a phone.</p>
+<div class="badges"><span>Synthetic data only</span><span>Integrations simulated and labelled</span><span>No network calls</span></div>
+</div></header>
+<div class="wrap"><main><ul class="grid">
+<li style="--ac:#2B50C8;--acf:#fff"><a class="card" target="_blank" rel="noopener" href="toolii-vs-bp.html"><div class="shot"><span class="num" aria-hidden="true">1</span><img src="screenshots/hero-bp.png" width="1440" height="900" alt="PMS appointment book in the Best Practice style, week view with booked slots" loading="lazy"></div><div class="body"><span class="vs">Compared with Best Practice</span><h2>GP at speed</h2><p>The appointment book is home. Keyboard shortcuts, right-click actions and a results inbox keep a busy front desk moving.</p><ul class="tags"><li>Appointment book</li><li>Waiting room</li><li>Results inbox</li></ul><span class="open">Open mockup<span class="sr"> (opens in a new tab)</span> <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></li>
+<li style="--ac:#7C3AED;--acf:#fff"><a class="card" target="_blank" rel="noopener" href="toolii-vs-halaxy.html"><div class="shot"><span class="num" aria-hidden="true">2</span><img src="screenshots/hero-halaxy.png" width="1440" height="900" alt="PMS full-page calendar in the Halaxy style with a grouped sidebar" loading="lazy"></div><div class="body"><span class="vs">Compared with Halaxy</span><h2>Friendly and online-first</h2><p>A full-page calendar with slide-over booking, online requests, invoices, claims and patient reminders.</p><ul class="tags"><li>Online booking</li><li>Invoices and claims</li><li>Reminders</li></ul><span class="open">Open mockup<span class="sr"> (opens in a new tab)</span> <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></li>
+<li style="--ac:#0E7490;--acf:#fff"><a class="card" target="_blank" rel="noopener" href="toolii-vs-medirecords.html"><div class="shot"><span class="num" aria-hidden="true">3</span><img src="screenshots/hero-medirecords.png" width="1440" height="900" alt="PMS appointments page in the MediRecords style with quick links and a status legend" loading="lazy"></div><div class="body"><span class="vs">Compared with MediRecords</span><h2>Clinical record, cloud and multi-site</h2><p>Quick links, a patient record with seven tabs, structured clinical sections and a secure messaging inbox.</p><ul class="tags"><li>Patient record</li><li>Clinical notes</li><li>Secure inbox</li></ul><span class="open">Open mockup<span class="sr"> (opens in a new tab)</span> <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></li>
+<li style="--ac:#F5B301;--acf:#17121F"><a class="card" target="_blank" rel="noopener" href="toolii-vs-xestro.html"><div class="shot"><span class="num" aria-hidden="true">4</span><img src="screenshots/hero-xestro.png" width="1440" height="900" alt="PMS practice overview in the Xestro style with claims and location figures" loading="lazy"></div><div class="body"><span class="vs">Compared with Xestro</span><h2>Specialist practice manager</h2><p>Admissions, theatre and delivery lists, quotes with gap, automations and reports by entity.</p><ul class="tags"><li>Admissions</li><li>Quotes</li><li>Reports</li></ul><span class="open">Open mockup<span class="sr"> (opens in a new tab)</span> <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></li>
+</ul></main>
+<footer>Pictures are static screenshots of each mockup. Competitor names are used only for comparison; no logos, wording or brand colours are copied.</footer></div>
+</body></html>
