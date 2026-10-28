@@ -208,3 +208,14 @@ dialog.sheet .mb{flex:1;min-height:0;overflow-y:auto;padding:14px 20px}dialog.sh
 .cdin,.cdsel{height:36px;border:1px solid var(--line-strong);border-radius:var(--rc);background:var(--surface);padding:0 10px;font-size:14px}.cdin{width:9.5rem}.cdsel{width:11.5rem}
 
 .s-late{--sc:var(--st-late)}.s-confirmed{--sc:var(--st-confirmed)}
+/* doctor dashboard */
+.dk-top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end;justify-content:space-between;margin-bottom:12px}
+.dk-hi{font-size:1.5rem;font-weight:700;margin:0;line-height:1.2}.dk-sub{margin:2px 0 0;color:var(--muted)}
+.dk-kp{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:14px}@media (min-width:700px){.dk-kp{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.dk-kp a{display:flex;flex-direction:column;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:var(--rc,8px);padding:10px 12px;text-decoration:none;color:var(--text)}
+.dk-kp a:hover{background:var(--hover)}.dk-kp a.w{border-color:var(--warn-solid)}.dk-kp b{font-size:1.5rem;line-height:1.1}.dk-kp span{color:var(--muted);font-size:.875rem}
+.dk-g{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}.dk-g>.col{min-width:0}
+@media (min-width:1100px){.dk.c2 .dk-g{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}.dk.c3 .dk-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.dk-now{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}.dk-nm{display:block;font-size:1.25rem}
+.dk-l{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:6px}.dk-l li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:var(--rc,8px);background:var(--surface)}
+.dk-l li.on{border-color:var(--sel-line);background:var(--sel)}.dk-l .t{font-variant-numeric:tabular-nums;font-weight:700}.dk-l .n{display:flex;flex-direction:column;min-width:0}.dk-l .n span{color:var(--muted);font-size:.875rem}.dk-l .act{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap}

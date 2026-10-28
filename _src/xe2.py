@@ -23,7 +23,7 @@ skin="""
 .locrow[aria-current=true] td{background:var(--sel)}
 .xlocs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 """
-vjs="""const V={id:'xestro',cal:true,role:'manager',logo:'PMS',title:'Practice overview',home:()=>xeHome(),
+vjs="""const V={id:'xestro',cal:true,docPages:['today','book','wait','pts','adm','lists','tele','letters','res','inbox','rec'],logo:'PMS',title:'Practice overview',home:()=>xeHome(),
 nav:N=>{const g=k=>N.find(n=>n[0]===k)||[k,k,''];const ic={adm:'M4 20V8l8-5 8 5v12zM9 20v-6h6v6',lists:'M5 4h14v16H5zM9 9h6M9 13h6M9 17h3',tele:'M4 7h11v10H4zM15 11l5-3v8l-5-3',quote:'M6 3h9l4 4v14H6zM9 12h7M9 16h5',letters:'M4 6h16v12H4zM4 7l8 6 8-6',auto:'M13 3L5 14h6l-1 7 8-11h-6z',rep:'M5 20V10M12 20V4M19 20v-7'};
  const n=(k,l)=>[k,l,ic[k]];return [['today','Practice overview','M3 11l9-8 9 8M5 9v11h14V9'],g('book'),g('pts'),n('adm','Admissions'),g('bill'),g('wait'),n('lists','Theatre and delivery lists'),n('tele','Telehealth'),n('letters','Letters and forms'),g('res'),g('inbox'),n('auto','Automations'),n('quote','Quotes'),g('rec'),n('rep','Reports'),g('comp'),g('set')]},
 labels:{today:'Practice overview',book:'Appointments',res:'Secure messaging',bill:'Billing and claims',inbox:'Messages and tasks',rec:'Recalls and lists',comp:'Compliance'},
@@ -52,4 +52,4 @@ ACT.xLoc=el=>{UI.loc=el.dataset.id;R()};ON.xp=el=>{UI.xp=+el.value;R()};ON.xai=e
 ACT.xaiOk=()=>{if(!need('reports','Sharing the summary'))return;UI.xai=false;audit('Approved AI weekly summary (simulated)','');R();toast('Approved. Sharing is simulated, nothing was sent.')};
 """
 post+=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'xe_views.js')).read()
-build('xestro','PMS vs Xestro, practice manager',tokens,skin,vjs,os.path.join(D,'..','toolii-vs-xestro.html'),post)
+build('xestro','PMS vs Xestro, specialist doctor',tokens,skin,vjs,os.path.join(D,'..','toolii-vs-xestro.html'),post)

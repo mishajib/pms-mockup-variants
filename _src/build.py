@@ -3,7 +3,7 @@ import os
 D=os.path.dirname(os.path.abspath(__file__))+'/'
 rd=lambda f:open(D+f).read()
 def build(v,title,tokens,skin_css,vjs,out,post=''):
-    js=vjs+rd('data.js')+rd('core.js')+rd('s1.js')+rd('s2.js')+rd('s3.js')+rd('s4.js')+post+rd('boot.js')
+    js=vjs+rd('data.js')+rd('core.js')+rd('s1.js')+rd('s2.js')+rd('s3.js')+rd('s4.js')+post+rd('doc_home.js')+rd('boot.js')
     html=f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; font-src data:; connect-src 'none'">

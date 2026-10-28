@@ -3,7 +3,7 @@ const DOCS={nair:{n:'Dr Priya Nair',s:'Nair',principal:true},hendry:{n:'Dr Tom H
 const TYPES={std:['Standard consult',20],long:['Long consult',40],imm:['Immunisation',15],tele:['Telehealth',20],rev:['Review',20],ha:['Health assessment',40]};
 const FEES={std:8200,long:14900,imm:3800,tele:7600,rev:8200,ha:14900};
 const DRUGS=['Atorvastatin 20 mg tablet','Perindopril 4 mg tablet','Metformin 500 mg tablet','Paracetamol 500 mg tablet','Amoxicillin 500 mg capsule','Salbutamol 100 mcg inhaler','Sertraline 50 mg tablet','Levothyroxine 50 mcg tablet'];
-const seed=()=>({v:3,role:'gp',next:100,
+const seed=()=>({v:4,role:'gp',next:100,
 pts:[
 {id:1,fn:'Marcus',ln:'Ellery',dob:'1971-08-02',sex:'M',ph:'0400 000 101',mc:'0123 45601 1',al:[],meds:[['Metformin','500 mg twice daily','reg'],['Perindopril','4 mg daily','reg']],flags:['Diabetes review due'],
  imm:[],obs:[['Weight','88.2','kg','12 Sep','Nurse'],['Blood pressure','132/84','mmHg','12 Sep','Nurse']]},
